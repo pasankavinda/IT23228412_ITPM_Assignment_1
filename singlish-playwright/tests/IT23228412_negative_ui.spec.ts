@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Neg_UI_0001",
-    name: "Long UI lag",
+    name: "Clear/reset functionality not working properly",
     input: "Test clearing the input field after entering: mama gedhara yanavaa",
     expected: "Both input and output fields should be completely cleared when clear button is clicked or input is manually deleted",
   },

@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 const testCases = [
   {
     id: "Pos_UI_0001",
-    name: "Real-time conversion",
+    name: "Real-time output updates while typing",
     input: "mama gedhara yanavaa",
     expected: "Sinhala output should update automatically while typing without requiring any button click. Expected: මම ගෙදර යනවා",
   },
