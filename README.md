@@ -1,4 +1,4 @@
-# Student ID: IT23288430
+# Student ID: IT23228412
 
 # ITPM (IT3040) Assignment 1 – Singlish to Sinhala Automation Testing
 
@@ -10,17 +10,17 @@ This project automates functional and UI test scenarios for the SwiftTranslator
 ## Project Structure
 
 ```
-IT23288430/
+IT23288412/
 ├─ singlish-playwright/
 │  ├─ package.json
 │  ├─ playwright.config.js
 │  └─ tests/
-│     ├─ IT23288430_negative_functional.spec.ts
-│     ├─ IT23288430_negative_ui.spec.ts
-|     ├─ IT23288430_positive_functional.spec.ts
-│     └─ IT23288430_positive_ui.spec.ts
-├─ IT23288430_GitHub_Link.txt
-├─ IT23288430_TestCases.xlsx
+│     ├── IT23228412_negative_functional.spec.ts
+│     ├─ IT23228412_negative_ui.spec.ts
+|     ├── IT23228412_positive_functional.spec.ts
+│     └─ IT23228412_positive_ui.spec.ts
+├─ IT23288412_GitHub_Link.txt
+├─ IT23288412_TestCases.xlsx
 ├─ package-lock.json
 ├─ package.json
 └─ README.md
@@ -49,10 +49,10 @@ IT23288430/
 
 ## Test Files
 
-- [singlish-playwright/tests/IT23288430_negative_functional.spec.ts](singlish-playwright/tests/IT23288430_negative_functional.spec.ts)
-- [singlish-playwright/tests/IT23288430_negative_ui.spec.ts](singlish-playwright/tests/IT23288430_negative_ui.spec.ts)
-- [singlish-playwright/tests/IT23288430_positive_functional.spec.ts](singlish-playwright/tests/IT23288430_positive_functional.spec.ts)
-- [singlish-playwright/tests/IT23288430_positive_ui.spec.ts](singlish-playwright/tests/IT23288430_positive_ui.spec.ts)
+- [singlish-playwright/tests/IT23288412_negative_functional.spec.ts](singlish-playwright/tests/IT23288412_negative_functional.spec.ts)
+- [singlish-playwright/tests/IT23288412_negative_ui.spec.ts](singlish-playwright/tests/IT23288412_negative_ui.spec.ts)
+- [singlish-playwright/tests/IT23288412_positive_functional.spec.ts](singlish-playwright/tests/IT23288412_positive_functional.spec.ts)
+- [singlish-playwright/tests/IT23288412_positive_ui.spec.ts](singlish-playwright/tests/IT23288412_positive_ui.spec.ts)
 
 ## Test Coverage
 

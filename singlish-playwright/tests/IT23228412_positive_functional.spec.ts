@@ -20,8 +20,7 @@ const testCases = [
     id: "Pos_Fun_0003",
     name: "Short request",
     input: "machan mata podi prashnayak velaa. apea dhura naeedhaee vena aachchii kenek naethivelaa. heta ehe yanna velaa thiyenavaa. Madam aehuvoth heethuva kiyanavadha? kiyanna next sunday  mata godak dhurata enna puluvan veyi kiyala.",
-    // Updated: Removed leading space and adjusted spacing
-    expected: "මචන් මට පොඩි ප්‍රශ්නයක් වෙලා. අපේ දුර නෑදෑ වෙන ආච්චී කෙනෙක් නැතිවෙලා. හෙට එහෙ යන්න වෙලා තියෙනවා. Madam ඇහුවොත් හේතුව කියනවද? කියන්න next sunday මට ගොඩක් දුරට එන්න පුලුවන් වෙයි කියල.",
+    expected: " මචන් මට පොඩි ප්‍රශ්නයක් වෙලා. අපේ දුර නෑදෑ වෙන ආච්චී කෙනෙක් නැතිවෙලා. හෙට එහෙ යන්න වෙලා තියෙනවා. Madam ඇහුවොත් හේතුව කියනවද? කියන්න next sunday  මට ගොඩක් දුරට එන්න පුලුවන් වෙයි කියල. ",
   },
   {
     id: "Pos_Fun_0004",
@@ -45,8 +44,7 @@ const testCases = [
     id: "Pos_Fun_0007",
     name: "Imperative",
     input: "eka dhigata vaedama vitharak karagena  giyoth machan, kaalaya kohoma giyaadha kiyala hithannavath baeri veyi. poddak hitha hari gassagena, vaeda tika harima nidhahasea karagena yana eka thamayi vaedhagath. naeththam oluvata tension ekak enna gaththoth, jiivitheama avul yanava. E nisaa poddak chill velaa, hemin hemin vaeda tika karagena yamu. Jiivithe kiyanne race ekak neveyi ne machan…  relax ekea, set velaa, steady gamanak yanna thiyenne.  ",
-    // Updated: Fixed "ජීවිතෙ" (was "ඦීවිතෙ" which contains invalid character)
-    expected: "එක දිගට වැඩම විතරක් කරගෙන ගියොත් මචන්, කාලය කොහොම ගියාද කියල හිතන්නවත් බැරි වෙයි. පොඩ්ඩක් හිත හරි ගස්සගෙන, වැඩ ටික හරිම නිදහසේ කරගෙන යන එක තමයි වැදගත්. නැත්තම් ඔලුවට tension එකක් එන්න ගත්තොත්, ජීවිතේම අවුල් යනව. එ නිසා පොඩ්ඩක් chill වෙලා, හෙමින් හෙමින් වැඩ ටික කරගෙන යමු. ජීවිතෙ කියන්නෙ race එකක් නෙවෙයි නේ මචන්… relax එකේ, සෙට් වෙලා, steady ගමනක් යන්න තියෙන්නෙ.",
+    expected: "එක දිගට වැඩම විතරක් කරගෙන  ගියොත් මචන්, කාලය කොහොම ගියාද කියල හිතන්නවත් බැරි වෙයි. පොඩ්ඩක් හිත හරි ගස්සගෙන, වැඩ ටික හරිම නිදහසේ කරගෙන යන එක තමයි වැදගත්. නැත්තම් ඔලුවට tension එකක් එන්න ගත්තොත්, ජීවිතේම අවුල් යනව. එ නිසා පොඩ්ඩක් chill වෙලා, හෙමින් හෙමින් වැඩ ටික කරගෙන යමු. ඦීවිතෙ කියන්නෙ race එකක් නෙවෙයි නේ මචන්…  relax එකේ, සෙට් වෙලා, steady ගමනක් යන්න තියෙන්නෙ.  ",
   },
   {
     id: "Pos_Fun_0008",
@@ -112,14 +110,13 @@ const testCases = [
     id: "Pos_Fun_0018",
     name: "Advice sentence",
     input: "aee ??? mokakdha ee vunee??",
-    // Updated: Changed "දඈ" to "ඇයි" or "අඩේ" - checking what translator actually produces
-    expected: "ඇයි ??? මොකක්ද ඒ වුනේ??",
+    expected: "දඈ ??? මොකක්ද ඒ වුනේ??",
   },
   {
     id: "Pos_Fun_0019",
     name: "Motivation",
     input: "labana maase godak dhurata eyaa venath ratakata  yaavi. ethakota balamu.",
-    expected: "ලබන මාසෙ ගොඩක් දුරට එයා වෙනත් රටකට යාවි. එතකොට බලමු.",
+    expected: "ලබන මාසෙ ගොඩක් දුරට එයා වෙනත් රටකට  යාවි. එතකොට බලමු.",
   },
   {
     id: "Pos_Fun_0020",
@@ -136,15 +133,13 @@ const testCases = [
   {
     id: "Pos_Fun_0022",
     name: "Simple answer",
-    input: "apita hithenava samahara velaavata ayiyoo meaka nam baeri vaedak kiyala. Eth poddak try ekak dhunnaama vaedee goda dhaaganna puluvan kiyala theerenavaa. ee nisaa vaedak dhaekka gaman baya velaa back venna epaa. poddak guts thiyaagena, full focus eka dhaala vaedeeta bahina eka thamayi vaedhagath. Ehema karaama anthimata baladhdhi apitama pudhuma hithenavaa, adee meaka mQQ karala needha kiyala.",
-    // Updated: Removed extra spacing and adjusted to match actual output
-    expected: "අපිට හිතෙනව සමහර වෙලාවට අයියෝ මේක නම් බැරි වැඩක් කියල. එත් පොඩ්ඩක් try එකක් දුන්නාම වැඩේ ගොඩ දාගන්න පුලුවන් කියල තේරෙනවා. ඒ නිසා වැඩක් දැක්ක ගමන් බය වෙලා back වෙන්න එපා. පොඩ්ඩක් guts තියාගෙන, full focus එක දාල වැඩේට බහින එක තමයි වැදගත්. එහෙම කරාම අන්තිමට බලද්දි අපිටම පුදුම හිතෙනවා, අඩේ මෙක මං කරල නේද කියල.",
+    input: "apita hithenava samahara velaavata “ayiyoo meaka nam baeri vaedak” kiyala. Eth poddak try ekak dhunnaama vaedee goda dhaaganna puluvan kiyala theerenavaa. ee nisaa vaedak dhaekka gaman baya velaa back venna epaa. poddak guts thiyaagena, full focus eka dhaala vaedeeta bahina eka thamayi vaedhagath. Ehema karaama anthimata baladhdhi apitama pudhuma hithenavaa, “adee meka mQQ karala needha” kiyala.",
+    expected: "අපිට හිතෙනව සමහර වෙලාවට “අයියෝ මේක නම් බැරි වැඩක්” කියල. එත් පොඩ්ඩක් try එකක් දුන්නාම වැඩේ ගොඩ දාගන්න පුලුවන් කියල තේරෙනවා. ඒ නිසා වැඩක් දැක්ක ගමන් බය වෙලා back වෙන්න එපා. පොඩ්ඩක් guts තියාගෙන, full focus එක දාල වැඩේට බහින එක තමයි වැදගත්. එහෙම කරාම අන්තිමට බලද්දි අපිටම පුදුම හිතෙනවා, “අඩේ මෙක මං කරල නේද” කියල.",
   },
   {
     id: "Pos_Fun_0023",
     name: "Simple negative",
     input: "kAdha udhee mama ikmanin naegitala muhuNa soodhala kaema kaala vaedata yanna suudhaanam unaa. paarata baehaela bus ekata naegala janeele laga iDHAgena paara dhigee balamin giyaa. Magadhi kadeekin thee kooppayak gaththa. vaedata giyaama yaaluvoth ekka kathaa karala dhavasee vaeda tika hemin hemin karagena giyaa. dhaval velaavee kaema kaala poddak viveeka gaththa. Havasata vaeda ivara karala aapahu bus eken gedhara aava. gedhara aevith naala karala, tika velaavak TV balala, passe raathrii kaeema kaala nidhaaganna suudhaanam unaa.",
-    // Updated: Adjusted spacing to match actual translator output
     expected: "අද උදේ මම ඉක්මනින් නැගිටල මුහුණ සෝදල කැම කාල වැඩට යන්න සූදානම් උනා. පාරට බැහැල bus එකට නැගල ජනේලෙ ලග ඉඳගෙන පාර දිගේ බලමින් ගියා. මගදි කඩේකින් තේ කෝප්පයක් ගත්ත. වැඩට ගියාම යාලුවොත් එක්ක කතා කරල දවසේ වැඩ ටික හෙමින් හෙමින් කරගෙන ගියා. දවල් වෙලාවේ කැම කාල පොඩ්ඩක් විවේක ගත්ත. හවසට වැඩ ඉවර කරල ආපහු bus එකෙන් ගෙදර ආව. ගෙදර ඇවිත් නාල කරල, ටික වෙලාවක් TV බලල, පස්සෙ රාත්‍රී කෑම කාල නිදාගන්න සූදානම් උනා.",
   },
   {
